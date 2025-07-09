@@ -75,9 +75,9 @@ title: Home
 <div id="powerbi" class="section active">
   <h2>NBA Player Comparison (Power BI)</h2>
   <p>Interactive analysis of NBA players using data from PostgreSQL hosted on AWS.</p>
-  <div style="max-width: 1200px; margin: auto;">
+  <div style="max-width: 1000px; margin: auto;">
     <iframe title="NBA_Analysis_Player_Stats_Final"
-            style="width: 100%; height: 700px;"
+            style="width: 100%; height: 2000px;"
             src="https://app.powerbi.com/view?r=eyJrIjoiMzRlMjMxZjktMWRjZi00ZmQxLWJkYmQtMmY1ZGEzNzExM2NkIiwidCI6IjljZjNkNGIxLTBiZTYtNGI4NS1iOTVkLWY4NjRkMmUxN2Q2OCIsImMiOjF9"
             frameborder="0" allowFullScreen="true"></iframe>
   </div>
