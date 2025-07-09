@@ -19,6 +19,7 @@ title: Home
   align-items: center;
   flex-wrap: wrap;
   border-radius: 8px;
+  flex-direction: row-reverse;
 }
 .left-content {
   display: flex;
