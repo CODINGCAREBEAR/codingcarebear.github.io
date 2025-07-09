@@ -161,25 +161,104 @@ title: Home
     <div style="display: flex; justify-content: center;">
       <div class='tableauPlaceholder' id='viz1752074946639' style='width:1000px; height:4027px;'>
         <!-- Tableau embed code viz2 -->
+        <noscript><a href='#'><img alt='Player Over Time' src='https://public.tableau.com/static/images/NB/NBAAwardsAnalysis/PlayerOverTime/1_rss.png' style='border: none' /></a></noscript>
+        <object class='tableauViz' style='display: none;'>
+          <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+          <param name='embed_code_version' value='3' />
+          <param name='site_root' value='' />
+          <param name='name' value='NBAAwardsAnalysis/PlayerOverTime' />
+          <param name='tabs' value='no' />
+          <param name='toolbar' value='yes' />
+          <param name='static_image' value='https://public.tableau.com/static/images/NB/NBAAwardsAnalysis/PlayerOverTime/1.png' />
+          <param name='animate_transition' value='yes' />
+          <param name='display_static_image' value='yes' />
+          <param name='display_spinner' value='yes' />
+          <param name='display_overlay' value='yes' />
+          <param name='display_count' value='yes' />
+          <param name='language' value='en-US' />
+        </object>        
       </div>
     </div>
   </div>
+
+  <script>
+  var divElement = document.getElementById('viz1752074946639');
+  var vizElement = divElement.getElementsByTagName('object')[0];
+  vizElement.style.width = '1000px';
+  vizElement.style.height = '4027px';
+  var scriptElement = document.createElement('script');
+  scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+  vizElement.parentNode.insertBefore(scriptElement, vizElement);
+  </script>
 
   <div id="viz3" class="tableau-viz" style="display:none; width:1000px; height:4027px;">
     <div style="display: flex; justify-content: center;">
       <div class='tableauPlaceholder' id='viz1752075033715' style='width:1000px; height:4027px;'>
         <!-- Tableau embed code viz3 -->
+        <noscript><a href='#'><img alt='Player Over Time' src='https://public.tableau.com/static/images/NB/NBALeagueTrends/PlayerOverTime/1_rss.png' style='border: none' /></a></noscript>
+        <object class='tableauViz' style='display: none;'>
+          <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+          <param name='embed_code_version' value='3' />
+          <param name='site_root' value='' />
+          <param name='name' value='NBALeagueTrends/PlayerOverTime' />
+          <param name='tabs' value='no' />
+          <param name='toolbar' value='yes' />
+          <param name='static_image' value='https://public.tableau.com/static/images/NB/NBALeagueTrends/PlayerOverTime/1.png' />
+          <param name='animate_transition' value='yes' />
+          <param name='display_static_image' value='yes' />
+          <param name='display_spinner' value='yes' />
+          <param name='display_overlay' value='yes' />
+          <param name='display_count' value='yes' />
+          <param name='language' value='en-US' />
+        </object>        
       </div>
     </div>
   </div>
+
+  <script>
+    var divElement = document.getElementById('viz1752075033715');
+    var vizElement = divElement.getElementsByTagName('object')[0];
+    vizElement.style.width = '1000px';
+    vizElement.style.height = '4027px';
+    var scriptElement = document.createElement('script');
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+  </script>
 
   <div id="viz4" class="tableau-viz" style="display:none; width:1000px; height:4027px;">
     <div style="display: flex; justify-content: center;">
       <div class='tableauPlaceholder' id='viz1752075073721' style='width:1000px; height:4027px;'>
         <!-- Tableau embed code viz4 -->
+        <noscript><a href='#'><img alt='Player Over Time' src='https://public.tableau.com/static/images/NB/NBAPlayerAnalysis_17104712376710/PlayerOverTime/1_rss.png' style='border: none' /></a></noscript>
+        <object class='tableauViz' style='display: none;'>
+          <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+          <param name='embed_code_version' value='3' />
+          <param name='site_root' value='' />
+          <param name='name' value='NBAPlayerAnalysis_17104712376710/PlayerOverTime' />
+          <param name='tabs' value='no' />
+          <param name='toolbar' value='yes' />
+          <param name='static_image' value='https://public.tableau.com/static/images/NB/NBAPlayerAnalysis_17104712376710/PlayerOverTime/1.png' />
+          <param name='animate_transition' value='yes' />
+          <param name='display_static_image' value='yes' />
+          <param name='display_spinner' value='yes' />
+          <param name='display_overlay' value='yes' />
+          <param name='display_count' value='yes' />
+          <param name='language' value='en-US' />
+        </object>
       </div>
     </div>
   </div>
+
+  <script>
+  var divElement = document.getElementById('viz1752075073721');
+  var vizElement = divElement.getElementsByTagName('object')[0];
+  vizElement.style.width = '1000px';
+  vizElement.style.height = '4027px';
+  var scriptElement = document.createElement('script');
+  scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+  vizElement.parentNode.insertBefore(scriptElement, vizElement);
+  </script>
+  
 </div>
 
 <!-- Streamlit Section -->
