@@ -100,16 +100,15 @@ title: Home
     <h2>NBA Award Predictions (Tableau)</h2>
     <p>Machine learning-driven predictions for NBA awards presented via Tableau dashboards.</p>
     <div style="max-width: 1060px; margin: auto;">
-      <!-- Tableau Embed Starts Here -->
       <div class='tableauPlaceholder' id='viz1752069025395' style='position: relative'>
         <noscript>
           <a href='#'>
             <img alt='Player Over Time'
-              src='https://public.tableau.com/static/images/NB/NBAAwardsPrediction/PlayerOverTime/1_rss.png'
-              style='border: none' />
+                src='https://public.tableau.com/static/images/NB/NBAAwardsPrediction/PlayerOverTime/1_rss.png'
+                style='border: none' />
           </a>
         </noscript>
-        <object class='tableauViz' style='display:none;'>
+        <object class='tableauViz' style='width:100%; height:900px;'>
           <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
           <param name='embed_code_version' value='3' />
           <param name='site_root' value='' />
@@ -117,7 +116,7 @@ title: Home
           <param name='tabs' value='no' />
           <param name='toolbar' value='yes' />
           <param name='static_image'
-            value='https://public.tableau.com/static/images/NB/NBAAwardsPrediction/PlayerOverTime/1.png' />
+                value='https://public.tableau.com/static/images/NB/NBAAwardsPrediction/PlayerOverTime/1.png' />
           <param name='animate_transition' value='yes' />
           <param name='display_static_image' value='yes' />
           <param name='display_spinner' value='yes' />
@@ -129,23 +128,13 @@ title: Home
       <script type='text/javascript'>
         var divElement = document.getElementById('viz1752069025395');
         var vizElement = divElement.getElementsByTagName('object')[0];
-        if (divElement.offsetWidth > 800) {
-          vizElement.style.width = '1000px';
-          vizElement.style.height = '1000px';
-        } else if (divElement.offsetWidth > 500) {
-          vizElement.style.width = '100%';
-          vizElement.style.height = '1000px';
-        } else {
-          vizElement.style.width = '100%';
-          vizElement.style.height = '1000px';
-        }
         var scriptElement = document.createElement('script');
         scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
         vizElement.parentNode.insertBefore(scriptElement, vizElement);
       </script>
-      <!-- Tableau Embed Ends Here -->
     </div>
   </div>
+
 
 
   <div id="streamlit" class="section">
