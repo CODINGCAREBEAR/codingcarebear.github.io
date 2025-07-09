@@ -17,8 +17,8 @@ title: Home
   max-width: 60%;
 }
 .hero img {
-  width: 140px;
-  height: 140px;
+  width: 200px;
+  height: 200px;
   border-radius: 10px;
   border: 3px solid #0056b3;
 }
