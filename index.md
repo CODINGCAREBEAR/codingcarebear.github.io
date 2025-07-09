@@ -111,7 +111,7 @@ title: Home
     <p style="text-align: center;">Interactive analysis of NBA player stats using data from a PostgreSQL database I created and hosted on AWS.</p>
     <iframe
       title="NBA_Analysis_Player_Stats_Final"
-      style="width: 100%; height: 4000px;"
+      style="width: 100%; height: 4500px;"
       src="https://app.powerbi.com/view?r=eyJrIjoiMzRlMjMxZjktMWRjZi00ZmQxLWJkYmQtMmY1ZGEzNzExM2NkIiwidCI6IjljZjNkNGIxLTBiZTYtNGI4NS1iOTVkLWY4NjRkMmUxN2Q2OCIsImMiOjF9"
       frameborder="0"
       allowFullScreen="true"
