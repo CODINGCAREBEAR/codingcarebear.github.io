@@ -65,8 +65,8 @@ title: Home
   <p>I'm a data analyst with a passion for interactive dashboards and AI-powered insights. I specialize in Power BI, Tableau, and Streamlit — turning data into intuitive visual stories.</p>
   <p>
     <a href="resume.pdf">📄 Resume</a> |
-    <a href="mailto:your@email.com">📧 Email</a> |
-    <a href="https://linkedin.com/in/yourprofile">🔗 LinkedIn</a>
+    <a href="mailto:carey.harrell@outlook.com">📧 Email</a> |
+    <a href="https://www.linkedin.com/in/carey-harrell/">🔗 LinkedIn</a>
   </p>
   </div>
   <img src="profile.jpg" alt="Your Photo" />
@@ -82,13 +82,13 @@ title: Home
   <div class="card" id="powerbi">
     <h3>NBA Player Comparison (Power BI)</h3>
     <p>Interactive analysis of NBA players using data from PostgreSQL hosted on AWS.</p>
-    <p><a href="https://app.powerbi.com/view?r=..." target="_blank">View Dashboard →</a></p>
+    <p><a href="https://app.powerbi.com/view?r=eyJrIjoiMzRlMjMxZjktMWRjZi00ZmQxLWJkYmQtMmY1ZGEzNzExM2NkIiwidCI6IjljZjNkNGIxLTBiZTYtNGI4NS1iOTVkLWY4NjRkMmUxN2Q2OCIsImMiOjF9" target="_blank">View Dashboard →</a></p>
   </div>
 
   <div class="card" id="tableau">
     <h3>NBA Award Predictions (Tableau)</h3>
     <p>Machine learning-driven predictions for NBA awards presented via Tableau dashboards.</p>
-    <p><a href="https://public.tableau.com/views/..." target="_blank">View Dashboard →</a></p>
+    <p><a href="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;NB&#47;NBAAwardsPrediction&#47;PlayerOverTime&#47;1_rss.png" target="_blank">View Dashboard →</a></p>
   </div>
 
   <div class="card" id="streamlit">
