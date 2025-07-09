@@ -60,25 +60,26 @@ title: Home
   display: block;
 }
 </style>
+<!-- Modified section inside your existing HTML -->
 
 <div class="container">
   <div class="hero">
     <div class="info">
       <h1>Hi, I'm Carey Harrell</h1>
       <p>
-        I'm a data analyst with a passion for interactive dashboards and AI-powered insights. I specialize in Power BI,
-        Tableau, and Streamlit — turning data into intuitive visual stories.
-      </p>
-      <p>
         <a href="resume.pdf">📄 Resume</a> |
         <a href="mailto:carey.harrell@outlook.com">📧 Email</a> |
         <a href="https://www.linkedin.com/in/carey-harrell/">🔗 LinkedIn</a>
+      </p>
+      <p>
+        I'm a data analyst with a passion for interactive dashboards and AI-powered insights. I specialize in Power BI,
+        Tableau, and Streamlit — turning data into intuitive visual stories.
       </p>
     </div>
     <img src="profile.jpg" alt="Your Photo" />
   </div>
 
-  <div class="buttons">
+  <div class="buttons" style="margin-bottom: 1em;">
     <button onclick="showSection('powerbi')" id="btn-powerbi" class="active">Power BI</button>
     <button onclick="showSection('tableau')" id="btn-tableau">Tableau</button>
     <button onclick="showSection('streamlit')" id="btn-streamlit">Streamlit</button>
@@ -95,21 +96,25 @@ title: Home
       allowFullScreen="true"
     ></iframe>
   </div>
+</div>
 
-</div> <!-- closing .container before Tableau -->
 
 <!-- Tableau Section -->
-<div id="tableau" class="section" style="max-width: 1000px; margin: 2em auto;">
+<div id="tableau" class="section" style="max-width: 1000px; margin: 1em auto;">
   <h2>NBA Tableau Dashboards</h2>
-  <p id="tableau-description">Interactive predictions for the 2024 NBA season awards, driven by advanced statistics and machine learning models.</p>
 
   <!-- Dashboard Selector Buttons -->
   <div style="text-align: center; margin-bottom: 1.5em;">
     <button onclick="showTableau('viz1')" class="tableau-btn active">2024 Award Predictions</button>
     <button onclick="showTableau('viz2')" class="tableau-btn">Historical Award Analysis</button>
-    <button onclick="showTableau('viz3')" class="tableau-btn">Player Career and Stats Analysis</button>
     <button onclick="showTableau('viz4')" class="tableau-btn">League Trends Over Time</button>
+    <button onclick="showTableau('viz3')" class="tableau-btn">Player Career and Stats Analysis</button>
   </div>
+
+  <!-- Moved Tableau description to here -->
+  <p id="tableau-description" style="text-align: center; max-width: 900px; margin: 0 auto 1em;">
+    Interactive predictions for the 2024 NBA season awards, driven by advanced statistics and machine learning models.
+  </p>
 
   <!-- Dashboard Containers -->
   <div id="viz1" class="tableau-viz" style="width:1000px; height:4027px;">
