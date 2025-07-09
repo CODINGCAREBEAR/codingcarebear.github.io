@@ -5,7 +5,7 @@ title: Home
 
 <style>
 .container {
-  max-width: 1060px;
+  max-width: 1150px;
   margin: 0 auto;
   padding: 0 1em;
 }
@@ -99,7 +99,7 @@ title: Home
   <div id="tableau" class="section">
     <h2>NBA Award Predictions (Tableau)</h2>
     <p>Machine learning-driven predictions for NBA awards presented via Tableau dashboards.</p>
-    <div style="max-width: 1060px; margin: auto;">
+    <div style="max-width: 1150px; margin: auto;">
       <div class='tableauPlaceholder' id='viz1752069025395' style='position: relative'>
         <noscript>
           <a href='#'>
