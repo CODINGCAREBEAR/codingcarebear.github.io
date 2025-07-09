@@ -89,7 +89,7 @@ title: Home
       <div class="info">
         <h1>Hi, I'm Carey Harrell</h1>
         <p>
-          I'm a data nerd with a passion for using data to develop impactful insights and solve problems. I'm experienced in SQL, Python, Tableau, Power BI, and Excel. I also have experience with machine learning and integrating AI.
+          I'm a data-driven problem solver passionate about turning raw data into impactful insights. I’m skilled in SQL, Python, Tableau, Power BI, and Excel, with experience in machine learning and AI integration. For my full resume or to get in touch, please click the link(s) below. 
         </p>
       </div>
       <div class="contact-links">
@@ -111,7 +111,7 @@ title: Home
     <p style="text-align: center;">Interactive analysis of NBA player stats using data from a PostgreSQL database I created and hosted on AWS.</p>
     <iframe
       title="NBA_Analysis_Player_Stats_Final"
-      style="width: 100%; height: 2000px;"
+      style="width: 100%; height: 4000px;"
       src="https://app.powerbi.com/view?r=eyJrIjoiMzRlMjMxZjktMWRjZi00ZmQxLWJkYmQtMmY1ZGEzNzExM2NkIiwidCI6IjljZjNkNGIxLTBiZTYtNGI4NS1iOTVkLWY4NjRkMmUxN2Q2OCIsImMiOjF9"
       frameborder="0"
       allowFullScreen="true"
