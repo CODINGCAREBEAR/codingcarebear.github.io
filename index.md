@@ -100,8 +100,7 @@ title: Home
 
 
 <!-- Tableau Section -->
-<div id="tableau" class="section" style="max-width: 1000px; margin: 1em auto;">
-  <h2>NBA Tableau Dashboards</h2>
+<div id="tableau" class="section" style="max-width: 1000px; margin: 0.1em;">
 
   <!-- Dashboard Selector Buttons -->
   <div style="text-align: center; margin-bottom: 1.5em;">
