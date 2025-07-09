@@ -51,17 +51,11 @@ title: Home
 .section.active {
   display: block;
 }
-iframe {
-  width: 100%;
-  height: 600px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-}
 </style>
 
 <div class="hero">
   <div class="info">
-    <h1>Hi, I'm CodingCareBear</h1>
+    <h1>Hi, I'm Carey Harrell</h1>
     <p>I'm a data analyst with a passion for interactive dashboards and AI-powered insights. I specialize in Power BI, Tableau, and Streamlit — turning data into intuitive visual stories.</p>
     <p>
       <a href="resume.pdf">📄 Resume</a> |
@@ -81,9 +75,12 @@ iframe {
 <div id="powerbi" class="section active">
   <h2>NBA Player Comparison (Power BI)</h2>
   <p>Interactive analysis of NBA players using data from PostgreSQL hosted on AWS.</p>
-  <iframe title="NBA_Analysis_Player_Stats_Final"
-          src="https://app.powerbi.com/view?r=eyJrIjoiMzRlMjMxZjktMWRjZi00ZmQxLWJkYmQtMmY1ZGEzNzExM2NkIiwidCI6IjljZjNkNGIxLTBiZTYtNGI4NS1iOTVkLWY4NjRkMmUxN2Q2OCIsImMiOjF9"
-          frameborder="0" allowFullScreen="true"></iframe>
+  <div style="max-width: 1200px; margin: auto;">
+    <iframe title="NBA_Analysis_Player_Stats_Final"
+            style="width: 100%; height: 700px;"
+            src="https://app.powerbi.com/view?r=eyJrIjoiMzRlMjMxZjktMWRjZi00ZmQxLWJkYmQtMmY1ZGEzNzExM2NkIiwidCI6IjljZjNkNGIxLTBiZTYtNGI4NS1iOTVkLWY4NjRkMmUxN2Q2OCIsImMiOjF9"
+            frameborder="0" allowFullScreen="true"></iframe>
+  </div>
 </div>
 
 <div id="tableau" class="section">
