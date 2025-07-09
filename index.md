@@ -100,46 +100,141 @@ title: Home
 
 <!-- Tableau Section -->
 <div id="tableau" class="section" style="max-width: 1000px; margin: 2em auto;">
-  <h2>NBA Award Predictions (Tableau)</h2>
-  <p>Machine learning-driven predictions for NBA awards presented via Tableau dashboards.</p>
+  <h2>NBA Tableau Dashboards</h2>
+  <p id="tableau-description">Interactive predictions for the 2024 NBA season awards, driven by advanced statistics and machine learning models.</p>
 
-  <div class='tableauPlaceholder' id='viz1752072783953' style='width:1000px; height:4027px;'>
-    <noscript>
-      <a href='#'>
-        <img alt='Player Over Time'
-          src='https://public.tableau.com/static/images/NB/NBAAwardsPrediction/PlayerOverTime/1_rss.png'
-          style='border: none' />
-      </a>
-    </noscript>
-    <object class='tableauViz' style='display: none;'>
-      <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-      <param name='embed_code_version' value='3' />
-      <param name='site_root' value='' />
-      <param name='name' value='NBAAwardsPrediction/PlayerOverTime' />
-      <param name='tabs' value='no' />
-      <param name='toolbar' value='yes' />
-      <param name='static_image'
-        value='https://public.tableau.com/static/images/NB/NBAAwardsPrediction/PlayerOverTime/1.png' />
-      <param name='animate_transition' value='yes' />
-      <param name='display_static_image' value='yes' />
-      <param name='display_spinner' value='yes' />
-      <param name='display_overlay' value='yes' />
-      <param name='display_count' value='yes' />
-      <param name='language' value='en-US' />
-    </object>
+  <!-- Dashboard Selector Buttons -->
+  <div style="text-align: center; margin-bottom: 1.5em;">
+    <button onclick="showTableau('viz1')" class="tableau-btn active">2024 Award Predictions</button>
+    <button onclick="showTableau('viz2')" class="tableau-btn">Historical Award Analysis</button>
+    <button onclick="showTableau('viz3')" class="tableau-btn">Player Career and Stats Analysis</button>
+    <button onclick="showTableau('viz4')" class="tableau-btn">League Trends Over Time</button>
   </div>
 
-  <script type='text/javascript'>
-    var divElement = document.getElementById('viz1752072783953');
-    var vizElement = divElement.getElementsByTagName('object')[0];
-    vizElement.style.width = '1000px';
-    vizElement.style.height = '4027px';
+  <!-- Dashboard Containers -->
+  <div id="viz1" class="tableau-viz" style="width:1000px; height:4027px;">
+    <div class='tableauPlaceholder' id='viz1752075142061' style='width:1000px; height:4027px;'>
+      <noscript><a href='#'><img alt='Player Over Time' src='https://public.tableau.com/static/images/NB/NBAAwardsPrediction/PlayerOverTime/1_rss.png' style='border: none' /></a></noscript>
+      <object class='tableauViz' style='display: none;'>
+        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+        <param name='embed_code_version' value='3' />
+        <param name='site_root' value='' />
+        <param name='name' value='NBAAwardsPrediction/PlayerOverTime' />
+        <param name='tabs' value='no' />
+        <param name='toolbar' value='yes' />
+        <param name='static_image' value='https://public.tableau.com/static/images/NB/NBAAwardsPrediction/PlayerOverTime/1.png' />
+        <param name='animate_transition' value='yes' />
+        <param name='display_static_image' value='yes' />
+        <param name='display_spinner' value='yes' />
+        <param name='display_overlay' value='yes' />
+        <param name='display_count' value='yes' />
+        <param name='language' value='en-US' />
+      </object>
+    </div>
+  </div>
 
-    var scriptElement = document.createElement('script');
-    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-    vizElement.parentNode.insertBefore(scriptElement, vizElement);
-  </script>
+  <div id="viz2" class="tableau-viz" style="display:none; width:1000px; height:4027px;">
+    <div class='tableauPlaceholder' id='viz1752074946639' style='width:1000px; height:4027px;'>
+      <noscript><a href='#'><img alt='Player Over Time' src='https://public.tableau.com/static/images/NB/NBAAwardsAnalysis/PlayerOverTime/1_rss.png' style='border: none' /></a></noscript>
+      <object class='tableauViz' style='display: none;'>
+        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+        <param name='embed_code_version' value='3' />
+        <param name='site_root' value='' />
+        <param name='name' value='NBAAwardsAnalysis/PlayerOverTime' />
+        <param name='tabs' value='no' />
+        <param name='toolbar' value='yes' />
+        <param name='static_image' value='https://public.tableau.com/static/images/NB/NBAAwardsAnalysis/PlayerOverTime/1.png' />
+        <param name='animate_transition' value='yes' />
+        <param name='display_static_image' value='yes' />
+        <param name='display_spinner' value='yes' />
+        <param name='display_overlay' value='yes' />
+        <param name='display_count' value='yes' />
+        <param name='language' value='en-US' />
+      </object>
+    </div>
+  </div>
+
+  <div id="viz3" class="tableau-viz" style="display:none; width:1000px; height:4027px;">
+    <div class='tableauPlaceholder' id='viz1752075073721' style='width:1000px; height:4027px;'>
+      <noscript><a href='#'><img alt='Player Over Time' src='https://public.tableau.com/static/images/NB/NBAPlayerAnalysis_17104712376710/PlayerOverTime/1_rss.png' style='border: none' /></a></noscript>
+      <object class='tableauViz' style='display: none;'>
+        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+        <param name='embed_code_version' value='3' />
+        <param name='site_root' value='' />
+        <param name='name' value='NBAPlayerAnalysis_17104712376710/PlayerOverTime' />
+        <param name='tabs' value='no' />
+        <param name='toolbar' value='yes' />
+        <param name='static_image' value='https://public.tableau.com/static/images/NB/NBAPlayerAnalysis_17104712376710/PlayerOverTime/1.png' />
+        <param name='animate_transition' value='yes' />
+        <param name='display_static_image' value='yes' />
+        <param name='display_spinner' value='yes' />
+        <param name='display_overlay' value='yes' />
+        <param name='display_count' value='yes' />
+        <param name='language' value='en-US' />
+      </object>
+    </div>
+  </div>
+
+  <div id="viz4" class="tableau-viz" style="display:none; width:1000px; height:4027px;">
+    <div class='tableauPlaceholder' id='viz1752075033715' style='width:1000px; height:4027px;'>
+      <noscript><a href='#'><img alt='Player Over Time' src='https://public.tableau.com/static/images/NB/NBALeagueTrends/PlayerOverTime/1_rss.png' style='border: none' /></a></noscript>
+      <object class='tableauViz' style='display: none;'>
+        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+        <param name='embed_code_version' value='3' />
+        <param name='site_root' value='' />
+        <param name='name' value='NBALeagueTrends/PlayerOverTime' />
+        <param name='tabs' value='no' />
+        <param name='toolbar' value='yes' />
+        <param name='static_image' value='https://public.tableau.com/static/images/NB/NBALeagueTrends/PlayerOverTime/1.png' />
+        <param name='animate_transition' value='yes' />
+        <param name='display_static_image' value='yes' />
+        <param name='display_spinner' value='yes' />
+        <param name='display_overlay' value='yes' />
+        <param name='display_count' value='yes' />
+        <param name='language' value='en-US' />
+      </object>
+    </div>
+  </div>
 </div>
+
+<!-- Script to toggle dashboards and descriptions -->
+<script>
+const descriptions = {
+  viz1: "Interactive predictions for the 2024 NBA season awards, driven by advanced statistics and machine learning models.",
+  viz2: "Explore historical trends in NBA award voting to understand past patterns and standout seasons.",
+  viz3: "Analyze individual NBA players’ careers, performance metrics, and evolution over time.",
+  viz4: "Dive into league-wide trends over the years including pace, scoring, and position dynamics."
+};
+
+function showTableau(id) {
+  document.querySelectorAll('.tableau-viz').forEach(el => el.style.display = 'none');
+  document.getElementById(id).style.display = 'block';
+  document.getElementById('tableau-description').textContent = descriptions[id];
+
+  document.querySelectorAll('.tableau-btn').forEach(btn => btn.classList.remove('active'));
+  const index = id.replace("viz", "") - 1;
+  document.querySelectorAll('.tableau-btn')[index].classList.add('active');
+}
+</script>
+
+<!-- Optional CSS for buttons -->
+<style>
+.tableau-btn {
+  margin: 0.5em;
+  padding: 0.5em 1.2em;
+  border: 2px solid #0056b3;
+  background-color: white;
+  color: #0056b3;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.tableau-btn.active, .tableau-btn:hover {
+  background-color: #0056b3;
+  color: white;
+}
+</style>
+
 
 
 <!-- Streamlit goes back inside -->
