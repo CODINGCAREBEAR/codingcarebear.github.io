@@ -13,7 +13,7 @@ title: Home
 .hero {
   background-color: #cce5ff;
   padding: 1.2em 1.5em;
-  margin-top: 2em;
+  margin-top: 1em;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -96,17 +96,7 @@ title: Home
     ></iframe>
   </div>
 
-  <div id="tableau" class="section">
-    <h2>NBA Award Predictions (Tableau)</h2>
-    <p>Machine learning-driven predictions for NBA awards presented via Tableau dashboards.</p>
-    <iframe
-      title="NBA_Award_Prediction"
-      style="width: 100%; height: 2000px;"
-      src="https://public.tableau.com/views/NBAAwardsPrediction/PlayerOverTime?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
-      frameborder="0"
-      allowFullScreen="true"
-    ></iframe>
-  </div>
+  <div class='tableauPlaceholder' id='viz1752069025395' style='position: relative'><noscript><a href='#'><img alt='Player Over Time ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;NB&#47;NBAAwardsPrediction&#47;PlayerOverTime&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='NBAAwardsPrediction&#47;PlayerOverTime' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;NB&#47;NBAAwardsPrediction&#47;PlayerOverTime&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1752069025395');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='4027px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='4027px';} else { vizElement.style.width='100%';vizElement.style.height='10027px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
 
   <div id="streamlit" class="section">
     <h2>NHANES Health Dashboard (Streamlit)</h2>
