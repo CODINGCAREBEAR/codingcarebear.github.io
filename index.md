@@ -133,6 +133,17 @@ title: Home
     </div>
   </div>
 
+  <script>
+  var divElement = document.getElementById('viz1752075142061');
+  var vizElement = divElement.getElementsByTagName('object')[0];
+  vizElement.style.width = '1000px';
+  vizElement.style.height = '4027px';
+  var scriptElement = document.createElement('script');
+  scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+  vizElement.parentNode.insertBefore(scriptElement, vizElement);
+  </script>
+
+
   <div id="viz2" class="tableau-viz" style="display:none; width:1000px; height:4027px;">
     <div class='tableauPlaceholder' id='viz1752074946639' style='width:1000px; height:4027px;'>
       <noscript><a href='#'><img alt='Player Over Time' src='https://public.tableau.com/static/images/NB/NBAAwardsAnalysis/PlayerOverTime/1_rss.png' style='border: none' /></a></noscript>
@@ -153,6 +164,17 @@ title: Home
       </object>
     </div>
   </div>
+
+  <script>
+  var divElement = document.getElementById('viz1752074946639');
+  var vizElement = divElement.getElementsByTagName('object')[0];
+  vizElement.style.width = '1000px';
+  vizElement.style.height = '4027px';
+  var scriptElement = document.createElement('script');
+  scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+  vizElement.parentNode.insertBefore(scriptElement, vizElement);
+  </script>
+
 
   <div id="viz3" class="tableau-viz" style="display:none; width:1000px; height:4027px;">
     <div class='tableauPlaceholder' id='viz1752075073721' style='width:1000px; height:4027px;'>
@@ -175,6 +197,17 @@ title: Home
     </div>
   </div>
 
+  <script>
+  var divElement = document.getElementById('viz1752075073721');
+  var vizElement = divElement.getElementsByTagName('object')[0];
+  vizElement.style.width = '1000px';
+  vizElement.style.height = '4027px';
+  var scriptElement = document.createElement('script');
+  scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+  vizElement.parentNode.insertBefore(scriptElement, vizElement);
+  </script>
+
+
   <div id="viz4" class="tableau-viz" style="display:none; width:1000px; height:4027px;">
     <div class='tableauPlaceholder' id='viz1752075033715' style='width:1000px; height:4027px;'>
       <noscript><a href='#'><img alt='Player Over Time' src='https://public.tableau.com/static/images/NB/NBALeagueTrends/PlayerOverTime/1_rss.png' style='border: none' /></a></noscript>
@@ -195,7 +228,17 @@ title: Home
       </object>
     </div>
   </div>
-</div>
+  </div>
+
+  <script>
+    var divElement = document.getElementById('viz1752075033715');
+    var vizElement = divElement.getElementsByTagName('object')[0];
+    vizElement.style.width = '1000px';
+    vizElement.style.height = '4027px';
+    var scriptElement = document.createElement('script');
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+  </script>
 
 <!-- Script to toggle dashboards and descriptions -->
 <script>
