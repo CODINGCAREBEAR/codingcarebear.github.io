@@ -20,8 +20,16 @@ title: Home
   flex-wrap: wrap;
   border-radius: 8px;
 }
-.hero .info {
+.left-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
   max-width: 60%;
+}
+.contact-links {
+  margin-top: 1em;
+  font-weight: bold;
 }
 .hero img {
   width: 160px;
@@ -77,17 +85,18 @@ title: Home
 
 <div class="container">
   <div class="hero">
-    <div class="info">
-      <h1>Hi, I'm Carey Harrell</h1>
-      <p>
+    <div class="left-content">
+      <div class="info">
+        <h1>Hi, I'm Carey Harrell</h1>
+        <p>
+          I'm a data nerd with a passion for using data to develop impactful insights and solve problems. I'm experienced in SQL, Python, Tableau, Power BI, and Excel. I also have experience with machine learning and integrating AI.
+        </p>
+      </div>
+      <div class="contact-links">
         <a href="resume.pdf">📄 Resume</a> |
         <a href="mailto:carey.harrell@outlook.com">📧 Email</a> |
         <a href="https://www.linkedin.com/in/carey-harrell/">🔗 LinkedIn</a>
-      </p>
-      <p>
-        I'm a data analyst with a passion for interactive dashboards and AI-powered insights. I specialize in Power BI,
-        Tableau, and Streamlit — turning data into intuitive visual stories.
-      </p>
+      </div>
     </div>
     <img src="profile.jpg" alt="Your Photo" />
   </div>
@@ -271,7 +280,7 @@ title: Home
 
 <script>
 const descriptions = {
-  viz1: "Machine learning model predictions for the 2024 NBA season's various awards made during the middle of the season. The machine learning model works by using gradient boosting regression to try to predict a player's % vote share for the 2024 season by looking at their performance stats and their team's performance stats. Player stat comparisons can be seen below and the first 3 stats shown are those that were found to be the most influential by the model.",
+  viz1: "Machine learning model predictions for the 2024 NBA season's various awards made during the middle of the season.",
   viz2: "Explore historical NBA awards to compare machine learning predictions against actual voting behaviour. This is particularly interesting in cases where the award outcomes were controversial and/or close.",
   viz3: "Dive into league-wide trends over the years including changes in pace, scoring, shot selection and accuracy, and iso ball.",
   viz4: "Analyze individual NBA players’ careers, performance metrics, and evolution over time."
