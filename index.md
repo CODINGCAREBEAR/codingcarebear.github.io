@@ -96,19 +96,24 @@ title: Home
     ></iframe>
   </div>
 
-  <div id="tableau" class="section">
-    <h2>NBA Award Predictions (Tableau)</h2>
-    <p>Machine learning-driven predictions for NBA awards presented via Tableau dashboards.</p>
-    <iframe
-      title="Test"
-      src="https://public.tableau.com/views/NBAAwardsPrediction/PlayerOverTime?:embed=y&:display_count=yes&:toolbar=yes"
-      width="1000"
-      height="4000"
-      frameborder="0"
-      allowFullScreen="true">
-    </iframe>
-  </div>
+</div> <!-- closing .container before Tableau -->
 
+<!-- Tableau section OUTSIDE container -->
+<div class="section" id="tableau" style="max-width: 1000px; margin: 2em auto;">
+  <h2>NBA Award Predictions (Tableau)</h2>
+  <p>Machine learning-driven predictions for NBA awards presented via Tableau dashboards.</p>
+  <iframe
+    title="NBA_Award_Prediction"
+    src="https://public.tableau.com/views/NBAAwardsPrediction/PlayerOverTime?:embed=y&:display_count=yes&:toolbar=yes"
+    width="1000"
+    height="4000"
+    frameborder="0"
+    allowFullScreen="true">
+  </iframe>
+</div>
+
+<!-- Streamlit goes back inside -->
+<div class="container">
   <div id="streamlit" class="section">
     <h2>NHANES Health Dashboard (Streamlit)</h2>
     <p>AI-enhanced health recommendations based on NHANES data via a Streamlit web app.</p>
