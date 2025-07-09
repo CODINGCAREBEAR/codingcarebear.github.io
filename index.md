@@ -26,36 +26,36 @@ title: Home
   margin: 2em 0;
   text-align: center;
 }
-.buttons a {
-  display: inline-block;
+.buttons button {
   margin: 0.5em;
   padding: 0.5em 1.5em;
   border: 2px solid #0056b3;
   border-radius: 25px;
-  text-decoration: none;
+  background-color: white;
   color: #0056b3;
   font-weight: bold;
+  cursor: pointer;
 }
-.buttons a:hover {
+.buttons button.active, .buttons button:hover {
   background-color: #0056b3;
   color: white;
 }
-.card-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5em;
-  justify-content: center;
-}
-.card {
-  border: 1px solid #ddd;
+.section {
+  display: none;
   padding: 1em;
-  width: 280px;
+  background-color: white;
   border-radius: 8px;
-  background: white;
+  margin-bottom: 2em;
   box-shadow: 2px 2px 6px rgba(0,0,0,0.05);
 }
-.card h3 {
-  margin-top: 0.5em;
+.section.active {
+  display: block;
+}
+iframe {
+  width: 100%;
+  height: 600px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
 }
 </style>
 
@@ -65,35 +65,42 @@ title: Home
   <p>I'm a data analyst with a passion for interactive dashboards and AI-powered insights. I specialize in Power BI, Tableau, and Streamlit — turning data into intuitive visual stories.</p>
   <p>
     <a href="resume.pdf">📄 Resume</a> |
-    <a href="mailto:carey.harrell@outlook.com">📧 Email</a> |
-    <a href="https://www.linkedin.com/in/carey-harrell/">🔗 LinkedIn</a>
+    <a href="mailto:your@email.com">📧 Email</a> |
+    <a href="https://linkedin.com/in/yourprofile">🔗 LinkedIn</a>
   </p>
   </div>
   <img src="profile.jpg" alt="Your Photo" />
 </div>
 
 <div class="buttons">
-  <a href="#powerbi">Power BI</a>
-  <a href="#tableau">Tableau</a>
-  <a href="#streamlit">Streamlit</a>
+  <button onclick="showSection('powerbi')" id="btn-powerbi">Power BI</button>
+  <button onclick="showSection('tableau')" id="btn-tableau">Tableau</button>
+  <button onclick="showSection('streamlit')" id="btn-streamlit">Streamlit</button>
 </div>
 
-<div class="card-grid">
-  <div class="card" id="powerbi">
-    <h3>NBA Player Comparison (Power BI)</h3>
-    <p>Interactive analysis of NBA players using data from PostgreSQL hosted on AWS.</p>
-    <p><a href="https://app.powerbi.com/view?r=eyJrIjoiMzRlMjMxZjktMWRjZi00ZmQxLWJkYmQtMmY1ZGEzNzExM2NkIiwidCI6IjljZjNkNGIxLTBiZTYtNGI4NS1iOTVkLWY4NjRkMmUxN2Q2OCIsImMiOjF9" target="_blank">View Dashboard →</a></p>
-  </div>
-
-  <div class="card" id="tableau">
-    <h3>NBA Award Predictions (Tableau)</h3>
-    <p>Machine learning-driven predictions for NBA awards presented via Tableau dashboards.</p>
-    <p><a href="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;NB&#47;NBAAwardsPrediction&#47;PlayerOverTime&#47;1_rss.png" target="_blank">View Dashboard →</a></p>
-  </div>
-
-  <div class="card" id="streamlit">
-    <h3>NHANES Health Dashboard (Streamlit)</h3>
-    <p>AI-enhanced health recommendations based on NHANES data via a Streamlit web app.</p>
-    <p><a href="https://your-streamlit-app.streamlit.app" target="_blank">Open App →</a></p>
-  </div>
+<div id="powerbi" class="section active">
+  <h2>NBA Player Comparison (Power BI)</h2>
+  <p>Interactive analysis of NBA players using data from PostgreSQL hosted on AWS.</p>
+  <iframe src="https://app.powerbi.com/view?r=YOUR_POWERBI_LINK" allowFullScreen="true"></iframe>
 </div>
+
+<div id="tableau" class="section">
+  <h2>NBA Award Predictions (Tableau)</h2>
+  <p>Machine learning-driven predictions for NBA awards presented via Tableau dashboards.</p>
+  <iframe src="https://public.tableau.com/views/YOUR_TABLEAU_LINK" allowFullScreen="true"></iframe>
+</div>
+
+<div id="streamlit" class="section">
+  <h2>NHANES Health Dashboard (Streamlit)</h2>
+  <p>AI-enhanced health recommendations based on NHANES data via a Streamlit web app.</p>
+  <p><a href="https://your-streamlit-app.streamlit.app" target="_blank">Open App →</a></p>
+</div>
+
+<script>
+function showSection(id) {
+  document.querySelectorAll('.section').forEach(sec => sec.classList.remove('active'));
+  document.querySelectorAll('.buttons button').forEach(btn => btn.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  document.getElementById('btn-' + id).classList.add('active');
+}
+</script>
