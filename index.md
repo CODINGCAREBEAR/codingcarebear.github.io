@@ -127,9 +127,35 @@ title: Home
     <div style="display: flex; justify-content: center;">
       <div class='tableauPlaceholder' id='viz1752075142061' style='width:1000px; height:4027px;'>
         <!-- Tableau embed code viz1 -->
+        <noscript><a href='#'><img alt='Player Over Time' src='https://public.tableau.com/static/images/NB/NBAAwardsPrediction/PlayerOverTime/1_rss.png' style='border: none' /></a></noscript>
+        <object class='tableauViz' style='display: none;'>
+          <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+          <param name='embed_code_version' value='3' />
+          <param name='site_root' value='' />
+          <param name='name' value='NBAAwardsPrediction/PlayerOverTime' />
+          <param name='tabs' value='no' />
+          <param name='toolbar' value='yes' />
+          <param name='static_image' value='https://public.tableau.com/static/images/NB/NBAAwardsPrediction/PlayerOverTime/1.png' />
+          <param name='animate_transition' value='yes' />
+          <param name='display_static_image' value='yes' />
+          <param name='display_spinner' value='yes' />
+          <param name='display_overlay' value='yes' />
+          <param name='display_count' value='yes' />
+          <param name='language' value='en-US' />
+        </object>
       </div>
     </div>
   </div>
+
+  <script>
+  var divElement = document.getElementById('viz1752075142061');
+  var vizElement = divElement.getElementsByTagName('object')[0];
+  vizElement.style.width = '1000px';
+  vizElement.style.height = '4027px';
+  var scriptElement = document.createElement('script');
+  scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+  vizElement.parentNode.insertBefore(scriptElement, vizElement);
+  </script>
 
   <div id="viz2" class="tableau-viz" style="display:none; width:1000px; height:4027px;">
     <div style="display: flex; justify-content: center;">
@@ -167,9 +193,9 @@ title: Home
 
 <script>
 const descriptions = {
-  viz1: "Machine learning model predictions for the 2024 NBA season's various awards. Predictions were made during the middle of the season and were created by a machine learning model I created that was trained on data I extracted and engineered. Player performance comparisons can be seen, particularly on the stats the machine learning model found to be the most predictive.",
-  viz2: "Explore historical NBA awards to compare machine learning predictions against actual voting behaviour. This is particularly interesting in cases where the awards were controversial and close.",
-  viz3: "Dive into league-wide trends over the years including pace, scoring, shot selection and accuracy, and iso ball.",
+  viz1: "Machine learning model predictions for the 2024 NBA season's various awards made during the middle of the season. The machine learning model works by using gradient boosting regression to try to predict a player's % vote share for the 2024 season by looking at their performance stats and their team's performance stats. Player stat comparisons can be seen below and the first 3 stats shown are those that were found to be the most influential by the model.",
+  viz2: "Explore historical NBA awards to compare machine learning predictions against actual voting behaviour. This is particularly interesting in cases where the award outcomes were controversial and/or close.",
+  viz3: "Dive into league-wide trends over the years including changes in pace, scoring, shot selection and accuracy, and iso ball.",
   viz4: "Analyze individual NBA players’ careers, performance metrics, and evolution over time."
 };
 
