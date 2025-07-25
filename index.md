@@ -103,8 +103,8 @@ title: Home
 
   <div class="buttons">
     <button onclick="showSection('powerbi')" id="btn-powerbi" class="active">Power BI</button>
+    <button onclick="showSection('healthapp')" id="btn-healthapp">Health Analytics Web App</button>
     <button onclick="showSection('tableau')" id="btn-tableau">Tableau</button>
-    <button onclick="showSection('streamlit')" id="btn-streamlit">Streamlit</button>
   </div>
 
   <div id="powerbi" class="section active">
@@ -117,189 +117,135 @@ title: Home
       allowFullScreen="true"
     ></iframe>
   </div>
-</div>
 
-<!-- Tableau Section -->
-<div id="tableau" class="section" style="margin: 0.1em auto; max-width: 1100px;">
-  <div style="text-align: center; margin-bottom: 1.5em;">
-    <button onclick="showTableau('viz1')" class="tableau-btn active">2024 Award Predictions</button>
-    <button onclick="showTableau('viz2')" class="tableau-btn">Historical Award Analysis</button>
-    <button onclick="showTableau('viz3')" class="tableau-btn">League Trends Over Time</button>
-    <button onclick="showTableau('viz4')" class="tableau-btn">Player Career and Stats Analysis</button>
+  <div id="healthapp" class="section">
+    <p style="text-align: center;">An interactive health analytics web application built with Streamlit and Python.</p>
+    <iframe
+      title="Health Analytics Web App"
+      style="width: 100%; height: 800px; border: none;"
+      src="https://healthdatavisuals.com/"
+      frameborder="0"
+      allowFullScreen="true"
+    ></iframe>
   </div>
+  
+  <div id="tableau" class="section" style="margin: 0.1em auto; max-width: 1100px;">
+    <div style="text-align: center; margin-bottom: 1.5em;">
+      <button onclick="showTableau('viz1')" class="tableau-btn active">2024 Award Predictions</button>
+      <button onclick="showTableau('viz2')" class="tableau-btn">Historical Award Analysis</button>
+      <button onclick="showTableau('viz3')" class="tableau-btn">League Trends Over Time</button>
+      <button onclick="showTableau('viz4')" class="tableau-btn">Player Career and Stats Analysis</button>
+    </div>
 
-  <p id="tableau-description" style="text-align: center; max-width: 900px; margin: 0 auto 1em;">
-    Machine learning model predictions for the 2024 NBA season's various awards. Predictions were made during the middle of the season and were created by a machine learning model I created that was trained on data I extracted and engineered. Player performance comparisons can be seen, particularly on the stats the machine learning model found to be the most predictive.
-  </p>
+    <p id="tableau-description" style="text-align: center; max-width: 900px; margin: 0 auto 1em;">
+      Machine learning model predictions for the 2024 NBA season's various awards. Predictions were made during the middle of the season and were created by a machine learning model I created that was trained on data I extracted and engineered. Player performance comparisons can be seen, particularly on the stats the machine learning model found to be the most predictive.
+    </p>
 
-  <div id="viz1" class="tableau-viz" style="width:1000px; height:4027px;">
-    <div style="display: flex; justify-content: center;">
-      <div class='tableauPlaceholder' id='viz1752075142061' style='width:1000px; height:4027px;'>
-        <!-- Tableau embed code viz1 -->
-        <noscript><a href='#'><img alt='Player Over Time' src='https://public.tableau.com/static/images/NB/NBAAwardsPrediction/PlayerOverTime/1_rss.png' style='border: none' /></a></noscript>
-        <object class='tableauViz' style='display: none;'>
-          <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-          <param name='embed_code_version' value='3' />
-          <param name='site_root' value='' />
-          <param name='name' value='NBAAwardsPrediction/PlayerOverTime' />
-          <param name='tabs' value='no' />
-          <param name='toolbar' value='yes' />
-          <param name='static_image' value='https://public.tableau.com/static/images/NB/NBAAwardsPrediction/PlayerOverTime/1.png' />
-          <param name='animate_transition' value='yes' />
-          <param name='display_static_image' value='yes' />
-          <param name='display_spinner' value='yes' />
-          <param name='display_overlay' value='yes' />
-          <param name='display_count' value='yes' />
-          <param name='language' value='en-US' />
-        </object>
+    <div id="viz1" class="tableau-viz" style="width:1000px; height:4027px;">
+      <div style="display: flex; justify-content: center;">
+        <div class='tableauPlaceholder' id='viz1752075142061' style='width:1000px; height:4027px;'>
+          <noscript><a href='#'><img alt='Player Over Time' src='https://public.tableau.com/static/images/NB/NBAAwardsPrediction/PlayerOverTime/1_rss.png' style='border: none' /></a></noscript>
+          <object class='tableauViz' style='display: none;'>
+            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+            <param name='embed_code_version' value='3' />
+            <param name='site_root' value='' />
+            <param name='name' value='NBAAwardsPrediction/PlayerOverTime' />
+            <param name='tabs' value='no' />
+            <param name='toolbar' value='yes' />
+            <param name='static_image' value='https://public.tableau.com/static/images/NB/NBAAwardsPrediction/PlayerOverTime/1.png' />
+            <param name='animate_transition' value='yes' />
+            <param name='display_static_image' value='yes' />
+            <param name='display_spinner' value='yes' />
+            <param name='display_overlay' value='yes' />
+            <param name='display_count' value='yes' />
+            <param name='language' value='en-US' />
+          </object>
+        </div>
       </div>
     </div>
-  </div>
 
-  <script>
-  var divElement = document.getElementById('viz1752075142061');
-  var vizElement = divElement.getElementsByTagName('object')[0];
-  vizElement.style.width = '1000px';
-  vizElement.style.height = '4027px';
-  var scriptElement = document.createElement('script');
-  scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-  vizElement.parentNode.insertBefore(scriptElement, vizElement);
-  </script>
-
-  <div id="viz2" class="tableau-viz" style="display:none; width:1000px; height:4027px;">
-    <div style="display: flex; justify-content: center;">
-      <div class='tableauPlaceholder' id='viz1752074946639' style='width:1000px; height:4027px;'>
-        <!-- Tableau embed code viz2 -->
-        <noscript><a href='#'><img alt='Player Over Time' src='https://public.tableau.com/static/images/NB/NBAAwardsAnalysis/PlayerOverTime/1_rss.png' style='border: none' /></a></noscript>
-        <object class='tableauViz' style='display: none;'>
-          <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-          <param name='embed_code_version' value='3' />
-          <param name='site_root' value='' />
-          <param name='name' value='NBAAwardsAnalysis/PlayerOverTime' />
-          <param name='tabs' value='no' />
-          <param name='toolbar' value='yes' />
-          <param name='static_image' value='https://public.tableau.com/static/images/NB/NBAAwardsAnalysis/PlayerOverTime/1.png' />
-          <param name='animate_transition' value='yes' />
-          <param name='display_static_image' value='yes' />
-          <param name='display_spinner' value='yes' />
-          <param name='display_overlay' value='yes' />
-          <param name='display_count' value='yes' />
-          <param name='language' value='en-US' />
-        </object>        
-      </div>
-    </div>
-  </div>
-
-  <script>
-  var divElement = document.getElementById('viz1752074946639');
-  var vizElement = divElement.getElementsByTagName('object')[0];
-  vizElement.style.width = '1000px';
-  vizElement.style.height = '4027px';
-  var scriptElement = document.createElement('script');
-  scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-  vizElement.parentNode.insertBefore(scriptElement, vizElement);
-  </script>
-
-  <div id="viz3" class="tableau-viz" style="display:none; width:1000px; height:4027px;">
-    <div style="display: flex; justify-content: center;">
-      <div class='tableauPlaceholder' id='viz1752075033715' style='width:1000px; height:4027px;'>
-        <!-- Tableau embed code viz3 -->
-        <noscript><a href='#'><img alt='Player Over Time' src='https://public.tableau.com/static/images/NB/NBALeagueTrends/PlayerOverTime/1_rss.png' style='border: none' /></a></noscript>
-        <object class='tableauViz' style='display: none;'>
-          <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-          <param name='embed_code_version' value='3' />
-          <param name='site_root' value='' />
-          <param name='name' value='NBALeagueTrends/PlayerOverTime' />
-          <param name='tabs' value='no' />
-          <param name='toolbar' value='yes' />
-          <param name='static_image' value='https://public.tableau.com/static/images/NB/NBALeagueTrends/PlayerOverTime/1.png' />
-          <param name='animate_transition' value='yes' />
-          <param name='display_static_image' value='yes' />
-          <param name='display_spinner' value='yes' />
-          <param name='display_overlay' value='yes' />
-          <param name='display_count' value='yes' />
-          <param name='language' value='en-US' />
-        </object>        
-      </div>
-    </div>
-  </div>
-
-  <script>
-    var divElement = document.getElementById('viz1752075033715');
+    <script>
+    var divElement = document.getElementById('viz1752075142061');
     var vizElement = divElement.getElementsByTagName('object')[0];
     vizElement.style.width = '1000px';
     vizElement.style.height = '4027px';
     var scriptElement = document.createElement('script');
     scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
     vizElement.parentNode.insertBefore(scriptElement, vizElement);
-  </script>
+    </script>
 
-  <div id="viz4" class="tableau-viz" style="display:none; width:1000px; height:4027px;">
-    <div style="display: flex; justify-content: center;">
-      <div class='tableauPlaceholder' id='viz1752075073721' style='width:1000px; height:4027px;'>
-        <!-- Tableau embed code viz4 -->
-        <noscript><a href='#'><img alt='Player Over Time' src='https://public.tableau.com/static/images/NB/NBAPlayerAnalysis_17104712376710/PlayerOverTime/1_rss.png' style='border: none' /></a></noscript>
-        <object class='tableauViz' style='display: none;'>
-          <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-          <param name='embed_code_version' value='3' />
-          <param name='site_root' value='' />
-          <param name='name' value='NBAPlayerAnalysis_17104712376710/PlayerOverTime' />
-          <param name='tabs' value='no' />
-          <param name='toolbar' value='yes' />
-          <param name='static_image' value='https://public.tableau.com/static/images/NB/NBAPlayerAnalysis_17104712376710/PlayerOverTime/1.png' />
-          <param name='animate_transition' value='yes' />
-          <param name='display_static_image' value='yes' />
-          <param name='display_spinner' value='yes' />
-          <param name='display_overlay' value='yes' />
-          <param name='display_count' value='yes' />
-          <param name='language' value='en-US' />
-        </object>
+    <div id="viz2" class="tableau-viz" style="display:none; width:1000px; height:4027px;">
+      <div style="display: flex; justify-content: center;">
+        <div class='tableauPlaceholder' id='viz1752074946639' style='width:1000px; height:4027px;'>
+          <noscript><a href='#'><img alt='Player Over Time' src='https://public.tableau.com/static/images/NB/NBAAwardsAnalysis/PlayerOverTime/1_rss.png' style='border: none' /></a></noscript>
+          <object class='tableauViz' style='display: none;'>
+            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+            <param name='embed_code_version' value='3' />
+            <param name='site_root' value='' />
+            <param name='name' value='NBAAwardsAnalysis/PlayerOverTime' />
+            <param name='tabs' value='no' />
+            <param name='toolbar' value='yes' />
+            <param name='static_image' value='https://public.tableau.com/static/images/NB/NBAAwardsAnalysis/PlayerOverTime/1.png' />
+            <param name='animate_transition' value='yes' />
+            <param name='display_static_image' value='yes' />
+            <param name='display_spinner' value='yes' />
+            <param name='display_overlay' value='yes' />
+            <param name='display_count' value='yes' />
+            <param name='language' value='en-US' />
+          </object>      
+        </div>
       </div>
     </div>
-  </div>
 
-  <script>
-  var divElement = document.getElementById('viz1752075073721');
-  var vizElement = divElement.getElementsByTagName('object')[0];
-  vizElement.style.width = '1000px';
-  vizElement.style.height = '4027px';
-  var scriptElement = document.createElement('script');
-  scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-  vizElement.parentNode.insertBefore(scriptElement, vizElement);
-  </script>
-  </div>
+    <script>
+    var divElement = document.getElementById('viz1752074946639');
+    var vizElement = divElement.getElementsByTagName('object')[0];
+    vizElement.style.width = '1000px';
+    vizElement.style.height = '4027px';
+    var scriptElement = document.createElement('script');
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    </script>
 
-<!-- Streamlit Section -->
-<div class="container">
-  <div id="streamlit" class="section">
-    <h2>NHANES Health Dashboard (Streamlit)</h2>
-    <p>AI-enhanced health recommendations based on NHANES data via a Streamlit web app.</p>
-    <p><a href="https://your-streamlit-app.streamlit.app" target="_blank">Open Streamlit App →</a></p>
-  </div>
-</div>
+    <div id="viz3" class="tableau-viz" style="display:none; width:1000px; height:4027px;">
+      <div style="display: flex; justify-content: center;">
+        <div class='tableauPlaceholder' id='viz1752075033715' style='width:1000px; height:4027px;'>
+          <noscript><a href='#'><img alt='Player Over Time' src='https://public.tableau.com/static/images/NB/NBALeagueTrends/PlayerOverTime/1_rss.png' style='border: none' /></a></noscript>
+          <object class='tableauViz' style='display: none;'>
+            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+            <param name='embed_code_version' value='3' />
+            <param name='site_root' value='' />
+            <param name='name' value='NBALeagueTrends/PlayerOverTime' />
+            <param name='tabs' value='no' />
+            <param name='toolbar' value='yes' />
+            <param name='static_image' value='https://public.tableau.com/static/images/NB/NBALeagueTrends/PlayerOverTime/1.png' />
+            <param name='animate_transition' value='yes' />
+            <param name='display_static_image' value='yes' />
+            <param name='display_spinner' value='yes' />
+            <param name='display_overlay' value='yes' />
+            <param name='display_count' value='yes' />
+            <param name='language' value='en-US' />
+          </object>      
+        </div>
+      </div>
+    </div>
 
-<script>
-const descriptions = {
-  viz1: "Machine learning model predictions for the 2024 NBA season's various awards made during the middle of the season.",
-  viz2: "Explore historical NBA awards to compare machine learning predictions against actual voting behaviour. This is particularly interesting in cases where the award outcomes were controversial and/or close.",
-  viz3: "Dive into league-wide trends over the years including changes in pace, scoring, shot selection and accuracy, and iso ball.",
-  viz4: "Analyze individual NBA players’ careers, performance metrics, and evolution over time."
-};
+    <script>
+      var divElement = document.getElementById('viz1752075033715');
+      var vizElement = divElement.getElementsByTagName('object')[0];
+      vizElement.style.width = '1000px';
+      vizElement.style.height = '4027px';
+      var scriptElement = document.createElement('script');
+      scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+      vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    </script>
 
-function showSection(id) {
-  document.querySelectorAll('.section').forEach(sec => sec.classList.remove('active'));
-  document.querySelectorAll('.buttons button').forEach(btn => btn.classList.remove('active'));
-  document.getElementById(id).classList.add('active');
-  document.getElementById('btn-' + id).classList.add('active');
-}
-
-function showTableau(id) {
-  document.querySelectorAll('.tableau-viz').forEach(el => el.style.display = 'none');
-  document.getElementById(id).style.display = 'block';
-  document.getElementById('tableau-description').textContent = descriptions[id];
-
-  document.querySelectorAll('.tableau-btn').forEach(btn => btn.classList.remove('active'));
-  const index = id.replace("viz", "") - 1;
-  document.querySelectorAll('.tableau-btn')[index].classList.add('active');
-}
-</script>
+    <div id="viz4" class="tableau-viz" style="display:none; width:1000px; height:4027px;">
+      <div style="display: flex; justify-content: center;">
+        <div class='tableauPlaceholder' id='viz1752075073721' style='width:1000px; height:4027px;'>
+          <noscript><a href='#'><img alt='Player Over Time' src='https://public.tableau.com/static/images/NB/NBAPlayerAnalysis_17104712376710/PlayerOverTime/1_rss.png' style='border: none' /></a></noscript>
+          <object class='tableauViz' style='display: none;'>
+            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+            <param name='embed_code_version' value='3' />
+            <param name='site_root' value='' />
+            <param name='name' value='NBAPlayerAnalysis_17104712376710/PlayerOverTime' />
