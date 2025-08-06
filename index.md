@@ -108,7 +108,7 @@ title: Home
   </div>
 
   <div id="webapp" class="section active">
-    <p style="text-align: center;">Interactive analysis of NBA player stats using data from a PostgreSQL database I created and hosted on AWS.</p>
+    <p style="text-align: center;">Health Data Visuals is an interactive web platform that I built that transforms complex public health data into accessible visualizations.</p>
     <iframe
       title="Health Analytics Web App"
       style="width: 100%; height: 4500px;"
