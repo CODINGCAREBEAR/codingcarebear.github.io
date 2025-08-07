@@ -89,7 +89,7 @@ title: Home
       <div class="info">
         <h1>Hi, I'm Carey Harrell</h1>
         <p>
-          I'm a data-driven problem solver passionate about turning raw data into impactful insights. I’m skilled in SQL, Python, Tableau, Power BI, and Excel, with experience in machine learning and AI integration. For my full resume or to get in touch, please click the link(s) below.
+          I'm a data-driven problem solver passionate about turning raw data into impactful insights. I’m skilled in SQL, Python, Tableau, Power BI, and Excel, with experience in data migrations, data analysis, machine learning, AI integration, and full stack development. For my full resume or to get in touch, please click the link(s) below.
         </p>
       </div>
       <div class="contact-links">
@@ -111,7 +111,7 @@ title: Home
     <p style="text-align: center;">Health Data Visuals is an interactive web platform that I built that transforms complex public health data into accessible visualizations.</p>
     <iframe
       title="Health Analytics Web App"
-      style="width: 100%; height: 4500px;"
+      style="width: 100%; height: 1500px;"
       src="https://healthdatavisuals.com/"
       frameborder="0"
       allowFullScreen="true"
