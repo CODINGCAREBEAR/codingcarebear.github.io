@@ -108,10 +108,10 @@ title: Home
   </div>
 
   <div id="webapp" class="section active">
-    <p style="text-align: center;">Health Data Visuals is an interactive web platform that I built that transforms complex public health data into accessible visualizations.</p>
+    <p style="text-align: center;">healthdatavisuals.com is an interactive web platform that I built that transforms complex public health data into accessible visualizations. Scroll down to interact with an informative pop-up or click anywhere to remove the pop-up and begin exploring.</p>
     <iframe
       title="Health Analytics Web App"
-      style="width: 100%; height: 1500px;"
+      style="width: 100%; height: 4500px;"
       src="https://healthdatavisuals.com/"
       frameborder="0"
       allowFullScreen="true"
