@@ -103,6 +103,7 @@ title: Home
 
   <div class="buttons">
     <button onclick="showSection('webapp')" id="btn-webapp" class="active">Health Analytics Web App</button>
+    <button onclick="showSection('tend-relationships')" id="btn-tend-relationships">Tend Relationships</button>
     <button onclick="showSection('powerbi')" id="btn-powerbi">Power BI</button>
     <button onclick="showSection('tableau')" id="btn-tableau">Tableau</button>
   </div>
@@ -113,6 +114,17 @@ title: Home
       title="Health Analytics Web App"
       style="width: 100%; height: 4500px;"
       src="https://healthdatavisuals.com/"
+      frameborder="0"
+      allowFullScreen="true"
+    ></iframe>
+  </div>
+
+  <div id="tend-relationships" class="section">
+    <p style="text-align: center;">Tend Relationships is a complete relationship management platform I built featuring both web and mobile apps currently undergoing beta testing. The platform is built using a React.js web app, React Native mobile app, and Flask backend with automated AWS deployment and several third-party integrations.</p>
+    <iframe
+      title="Tend Relationships"
+      style="width: 100%; height: 4500px;"
+      src="https://tendrelationships.com/"
       frameborder="0"
       allowFullScreen="true"
     ></iframe>
