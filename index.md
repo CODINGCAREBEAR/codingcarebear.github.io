@@ -121,16 +121,13 @@ title: Home
 
   <div id="tend-relationships" class="section">
     <p style="text-align: center;">Tend Relationships is a complete relationship management platform I built featuring both web and mobile apps currently undergoing beta testing. The platform is built using a React.js web app, React Native mobile app, and Flask backend with automated AWS deployment and several third-party integrations.</p>
-    <div style="position: relative; width: 100%; height: 4500px; overflow: hidden; border: 1px solid #ddd; border-radius: 8px;">
-      <iframe
-        title="Tend Relationships"
-        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
-        src="https://tendrelationships.com/"
-        allowFullScreen="true"
-        scrolling="yes"
-        sandbox="allow-same-origin allow-scripts allow-forms allow-popups allow-popups-to-escape-sandbox"
-      ></iframe>
-    </div>
+    <iframe
+      title="Tend Relationships"
+      style="width: 100%; height: 2500px;"
+      src="https://tendrelationships.com/"
+      frameborder="0"
+      allowFullScreen="true"
+    ></iframe>
   </div>
 
   <div id="powerbi" class="section">
