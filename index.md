@@ -111,7 +111,7 @@ title: Home
   <div id="webapp" class="section active">
     <p style="text-align: center;">healthdatavisuals.com is an interactive web platform that I built that transforms complex public health data into accessible visualizations.</p>
     <div style="text-align: center; margin: 1em 0;">
-      <a href="https://healthdatavisuals.com/" target="_blank" style="display: inline-block; padding: 15px 30px; background-color: #0056b3; color: white; text-decoration: none; border-radius: 25px; font-weight: bold; font-size: 1.1em; margin-bottom: 1em; min-width: 200px;">View Full Site</a>
+      <a href="https://healthdatavisuals.com/" target="_blank" style="display: inline-block; padding: 8px 16px; background-color: #0056b3; color: white; text-decoration: none; border-radius: 20px; font-weight: bold; font-size: 0.9em; margin-bottom: 1em;">View Full Site</a>
     </div>
     <div style="text-align: center; margin: 1em 0; color: #666; font-size: 1.1em;">
       - or -
@@ -129,12 +129,12 @@ title: Home
   <div id="tend-relationships" class="section">
     <p style="text-align: center;">Tend Relationships is a complete relationship management platform I built featuring both web and mobile apps currently undergoing beta testing. The platform is built using a React.js web app, React Native mobile app, and Flask backend with automated AWS deployment and several third-party integrations.</p>
     <div style="text-align: center; margin: 1em 0;">
-      <a href="https://tendrelationships.com/" target="_blank" style="display: inline-block; padding: 15px 30px; background-color: #0056b3; color: white; text-decoration: none; border-radius: 25px; font-weight: bold; font-size: 1.1em; margin-bottom: 1em; min-width: 200px;">View Full Site</a>
+      <a href="https://tendrelationships.com/" target="_blank" style="display: inline-block; padding: 8px 16px; background-color: #0056b3; color: white; text-decoration: none; border-radius: 20px; font-weight: bold; font-size: 0.9em; margin-bottom: 1em;">View Full Site</a>
     </div>
     <div style="text-align: center; margin: 1em 0; color: #666; font-size: 1.1em;">
       - or -
     </div>
-    <p style="text-align: center; color: #666; font-size: 0.95em;">Explore the interactive demo below to see the platform in action.</p>
+    <p style="text-align: center; color: #666; font-size: 0.95em;">Explore the web app below</p>
     <iframe
       title="Tend Relationships"
       style="width: 100%; height: 800px;"
