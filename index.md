@@ -123,7 +123,7 @@ title: Home
     <p style="text-align: center;">Tend Relationships is a complete relationship management platform I built featuring both web and mobile apps currently undergoing beta testing. The platform is built using a React.js web app, React Native mobile app, and Flask backend with automated AWS deployment and several third-party integrations.</p>
     <iframe
       title="Tend Relationships"
-      style="width: 100%; height: 2500px;"
+      style="width: 100%; height: 1500px;"
       src="https://tendrelationships.com/"
       frameborder="0"
       allowFullScreen="true"
