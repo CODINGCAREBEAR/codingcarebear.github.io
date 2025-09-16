@@ -110,6 +110,9 @@ title: Home
 
   <div id="webapp" class="section active">
     <p style="text-align: center;">healthdatavisuals.com is an interactive web platform that I built that transforms complex public health data into accessible visualizations. Scroll down to interact with an informative pop-up or click anywhere to remove the pop-up and begin exploring.</p>
+    <div style="text-align: center; margin: 1em 0;">
+      <a href="https://healthdatavisuals.com/" target="_blank" style="display: inline-block; padding: 8px 16px; background-color: #0056b3; color: white; text-decoration: none; border-radius: 20px; font-weight: bold; font-size: 0.9em; margin-bottom: 1em;">View Full Site</a>
+    </div>
     <iframe
       title="Health Analytics Web App"
       style="width: 100%; height: 4500px;"
@@ -121,10 +124,13 @@ title: Home
 
   <div id="tend-relationships" class="section">
     <p style="text-align: center;">Tend Relationships is a complete relationship management platform I built featuring both web and mobile apps currently undergoing beta testing. The platform is built using a React.js web app, React Native mobile app, and Flask backend with automated AWS deployment and several third-party integrations.</p>
+    <div style="text-align: center; margin: 1em 0;">
+      <a href="https://tendrelationships.com/" target="_blank" style="display: inline-block; padding: 8px 16px; background-color: #0056b3; color: white; text-decoration: none; border-radius: 20px; font-weight: bold; font-size: 0.9em; margin-bottom: 1em;">View Full Site</a>
+    </div>
     <iframe
       title="Tend Relationships"
-      style="width: 100%; height: 1500px;"
-      src="https://tendrelationships.com/"
+      style="width: 100%; height: 800px;"
+      src="https://tendrelationships.com/?embedded=true"
       frameborder="0"
       allowFullScreen="true"
     ></iframe>
